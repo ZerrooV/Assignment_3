@@ -1,4 +1,4 @@
-// MUHAMMAD VEKA
+// MUHAMMAD VEKA SYAHPUTRA
 
 function isArithmeticProgression(numbers) {
     if (numbers.length <= 1) return true;  
