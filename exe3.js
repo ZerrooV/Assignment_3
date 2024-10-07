@@ -1,4 +1,4 @@
-//MUHAMAMD VEKA
+//MUHAMAMD VEKA SYAHPUTRA
 
 function sumArray(arr, int) {
     let result = [];
