@@ -1,0 +1,25 @@
+//MUHAMAMAD VEKA
+
+function arrSum(arr) {
+    let maxSoFar = arr[0]; 
+    let maxEndingHere = arr[0];
+    let start = 0, end = 0, tempStart = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > maxEndingHere + arr[i]) {
+            maxEndingHere = arr[i];
+            tempStart = i;
+        } else {
+            maxEndingHere += arr[i];
+        }
+
+        if (maxEndingHere > maxSoFar) {
+            maxSoFar = maxEndingHere;
+            start = tempStart;
+            end = i;
+        }
+    }
+    return [arr.slice(start, end + 1), maxSoFar];
+}
+
+console.log(arrSum([-2, -3, 4, -1, -2, 1, 5, -3])); 
