@@ -1,4 +1,4 @@
-//MUHAMAMAD VEKA
+//MUHAMAMAD VEKA SYAHPUTRA
 
 function arrSum(arr) {
     let maxSoFar = arr[0]; 
